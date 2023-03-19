@@ -18,23 +18,22 @@ thrillerOptions = ["The Gray Man"];
 //When a theme is clicked on, t displayed the list accoring to array of options
 spanList = (arr, selector) => {
   let ul = selector;
-  let showUl = ul.classList;
-  showUl.toggle("on");
-  if (ul.classList.contains("off")) {
-    console.log('here')
-    console.log(showUl)
-    ul.style.display = "none"
-    showUl.remove("off");
-  } else {
-    showUl.toggle("off");
+
+  if (ul.children.length === 0) {
     for (var i = 0; i < arr.length; i++) {
-        let li = document.createElement("li");
-        li.textContent = arr[i];
-        ul.append(li);
-      }
+      let li = document.createElement("li");
+      li.textContent = arr[i];
+      li.style.fontSize = '26px'
+      ul.append(li);
+    }
   }
 
- 
+  if (ul.style.display === "block") {
+    ul.style.display = "none";
+    ul.classList === "";
+  } else {
+    ul.style.display = "block";
+  }
 };
 
 actionBtn.addEventListener("click", function () {
