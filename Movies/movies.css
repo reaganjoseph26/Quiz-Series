@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+Avestan&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Acme', sans-serif;
+    /* font-family: 'Noto Sans Avestan', sans-serif; */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* position: relative; */
+}
