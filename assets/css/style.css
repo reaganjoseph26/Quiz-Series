@@ -1,9 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+Avestan&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.quizBox-contianers  {
-    height: 100%;
-    width: 100%;
+body {
+    font-family: 'Acme', sans-serif;
+    /* font-family: 'Noto Sans Avestan', sans-serif; */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* position: relative; */
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quizBox-contianers {
+
+    opacity: 0.6;
+    position: relative;
+}
+
+.quizBox-contianers:hover {
+    opacity: 1;
+}
+
+img {
+    height: 360px;
+    z-index: -1;
+}
+
+.img-title {
+    position: absolute;
+    font-size: 34px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+    z-index: 1;
+}
+
+h2 {
+    color: white;
 }

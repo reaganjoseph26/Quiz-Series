@@ -1,13 +1,13 @@
 var movieThemeDiv = document.querySelector('#movieThemes')
-var showsThemeDiv = document.querySelector('#movieThemes')
-var musicThemeDiv = document.querySelector('#movieThemes')
+var showsThemeDiv = document.querySelector('#showThemes')
+var musicThemeDiv = document.querySelector('#musicThemes')
 
-movieThemeDiv.addEventListener("click", function() {
-    console.log('movie click')
+movieThemeDiv.addEventListener("click", function () {
+    location.href = './Movies/movies.html';
 })
-showsThemeDiv.addEventListener("shows click", function() {
-    console.log('click')
+showsThemeDiv.addEventListener("click", function () {
+    location.href = './Shows/shows.html';
 })
-musicThemeDiv.addEventListener(" music click", function() {
-    console.log('click')
+musicThemeDiv.addEventListener("click", function () {
+    location.href = './Music/music.html';
 })
